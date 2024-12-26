@@ -258,7 +258,7 @@ span{
  @keyframes words{
     0%,
     20%{
-        content: "Frondend Designer";
+        content: "Front-end Designer";
     }
     21%,
     40%{
@@ -701,6 +701,8 @@ border: 1px solid var(--main-color);
     flex-wrap: wrap ;
 }
 
+
+
 .contact form .input-box input,
 .contact form textarea{
     width: 100%;
@@ -770,6 +772,15 @@ border: 1px solid var(--main-color);
     transition: 0.3s ease-in-out;
 
 }
+
+.footer img{
+
+    mix-blend-mode: screen;
+    width: 25rem;
+
+}
+
+
 
 .footer ul li a:hover{
 border-bottom: 3px solid var(--main-color);
@@ -910,7 +921,7 @@ border-bottom: 3px solid var(--main-color);
 
 
     .service-info p {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
 
@@ -921,7 +932,8 @@ border-bottom: 3px solid var(--main-color);
 
 
     .service-info h4 {
-        font-size: 2.2rem;
+        text-align: center;
+        font-size: 3rem;
     }
 
     .services-container{
@@ -938,5 +950,14 @@ border-bottom: 3px solid var(--main-color);
     font-size: 7rem;
 
 }
+
+}
+
+
+@media(max-width:360px){
+
+    .service-info p{
+        font-size: 1.2rem;
+    }
 
 }
