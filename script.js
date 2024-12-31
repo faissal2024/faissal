@@ -13,7 +13,12 @@ toggleBtn.addEventListener('click', function() {
 
 
 
-
+document.addEventListener("DOMContentLoaded", function () {
+  window.onload = function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+  };
+});
 
 
 class Translate{
@@ -62,11 +67,9 @@ Translate(language){
 
 
 
-    document.getElementById("btn ar").innerHTML = "يؤجر";
+    document.getElementById("btn ar").innerHTML = "تواصل";
 
 
-
-    document.getElementById("btn ar2").innerHTML = "تواصل";
 
 
 
