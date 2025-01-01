@@ -272,16 +272,16 @@ span{
     top: 3rem;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 25px red;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 
 
 .home-img img:hover{
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color),
+    box-shadow: 0 0 25px rgb(0, 0, 0),
+                0 0 50px red,
+                0 0 100px red;
 }
 .home-content p{
     font-size: 1.5rem;
@@ -290,6 +290,12 @@ span{
     max-width: 1000px;
 
 }
+
+
+.home-content p::selection{
+    color: red;
+}
+
 
 .social-icons a{
     display: inline-flex;
@@ -557,7 +563,7 @@ span{
 
 
 .services{
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     color: black;
 
 }
@@ -616,7 +622,7 @@ span{
 }
 
 .testimonials{
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .testimonials-box{
 background-size: cover;
@@ -829,6 +835,8 @@ border: 1px solid var(--main-color);
 
 
 
+
+
 .contact form .input-box input,
 .contact form textarea{
     width: 100%;
@@ -879,9 +887,9 @@ border: 1px solid var(--main-color);
 
 .footer .social a:hover{
     transform: scale(1.2)translateY(-10px);
-    background-color: var(--main-color);
+    background-color: red;
     color: black;
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 25px red;
 }
 
 .footer ul{
