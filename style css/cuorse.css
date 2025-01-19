@@ -1,0 +1,686 @@
+
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+  }
+  .ltr {
+    direction: ltr;
+    text-align: left;
+  }
+
+
+
+
+  /* From Uiverse.io by SelfMadeSystem */ 
+/*
+More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
+ */
+
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #0000 0,
+    #0000 2px,
+    hsl(0 0 4%) 2px
+  );
+  background-size: 8px 8px;
+  --f: blur(1em) brightness(6);
+  animation: hii 10s linear infinite;
+}
+
+@keyframes hii {
+  0% {
+    backdrop-filter: var(--f) hue-rotate(0deg);
+  }
+  to {
+    backdrop-filter: var(--f) hue-rotate(360deg);
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  --c: #09f;
+  background-color: #000;
+  background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 252px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 252px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 126px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 150px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 150px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 75px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 253px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 253px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 126.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 204px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 204px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 102px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 134px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 134px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 67px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 179px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 179px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 89.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 299px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 299px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 149.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 215px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 215px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 107.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 281px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 281px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 140.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 158px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 158px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 79px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 210px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 210px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 105px, var(--c) 100%, #0000 150%);
+  background-size:
+    300px 235px,
+    300px 235px,
+    300px 235px,
+    300px 252px,
+    300px 252px,
+    300px 252px,
+    300px 150px,
+    300px 150px,
+    300px 150px,
+    300px 253px,
+    300px 253px,
+    300px 253px,
+    300px 204px,
+    300px 204px,
+    300px 204px,
+    300px 134px,
+    300px 134px,
+    300px 134px,
+    300px 179px,
+    300px 179px,
+    300px 179px,
+    300px 299px,
+    300px 299px,
+    300px 299px,
+    300px 215px,
+    300px 215px,
+    300px 215px,
+    300px 281px,
+    300px 281px,
+    300px 281px,
+    300px 158px,
+    300px 158px,
+    300px 158px,
+    300px 210px,
+    300px 210px,
+    300px 210px;
+  animation: hi 150s linear infinite;
+}
+
+@keyframes hi {
+  0% {
+    background-position:
+      0px 220px,
+      3px 220px,
+      151.5px 337.5px,
+      25px 24px,
+      28px 24px,
+      176.5px 150px,
+      50px 16px,
+      53px 16px,
+      201.5px 91px,
+      75px 224px,
+      78px 224px,
+      226.5px 350.5px,
+      100px 19px,
+      103px 19px,
+      251.5px 121px,
+      125px 120px,
+      128px 120px,
+      276.5px 187px,
+      150px 31px,
+      153px 31px,
+      301.5px 120.5px,
+      175px 235px,
+      178px 235px,
+      326.5px 384.5px,
+      200px 121px,
+      203px 121px,
+      351.5px 228.5px,
+      225px 224px,
+      228px 224px,
+      376.5px 364.5px,
+      250px 26px,
+      253px 26px,
+      401.5px 105px,
+      275px 75px,
+      278px 75px,
+      426.5px 180px;
+  }
+
+  to {
+    background-position:
+      0px 6800px,
+      3px 6800px,
+      151.5px 6917.5px,
+      25px 13632px,
+      28px 13632px,
+      176.5px 13758px,
+      50px 5416px,
+      53px 5416px,
+      201.5px 5491px,
+      75px 17175px,
+      78px 17175px,
+      226.5px 17301.5px,
+      100px 5119px,
+      103px 5119px,
+      251.5px 5221px,
+      125px 8428px,
+      128px 8428px,
+      276.5px 8495px,
+      150px 9876px,
+      153px 9876px,
+      301.5px 9965.5px,
+      175px 13391px,
+      178px 13391px,
+      326.5px 13540.5px,
+      200px 14741px,
+      203px 14741px,
+      351.5px 14848.5px,
+      225px 18770px,
+      228px 18770px,
+      376.5px 18910.5px,
+      250px 5082px,
+      253px 5082px,
+      401.5px 5161px,
+      275px 6375px,
+      278px 6375px,
+      426.5px 6480px;
+  }
+}
+
+
+
+
+
+
+.card2 {
+
+font-size: 85px;
+background: rgba(41, 41, 41, 0);
+white-space: nowrap;
+overflow: hidden;
+border-radius: 50px;
+
+}
+
+button {
+font-size: 20px;
+margin: 0 70px;
+border: none;
+background-color: transparent;
+cursor: grab;
+}
+
+.longs {
+font-size: 5px;
+display: inline-block;
+animation: 30s sliding infinite linear;
+}
+
+/* to pause on hover  */
+/* .card:hover .longs{
+animation-play-state: paused;
+} */
+
+@keyframes sliding {
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-101%);
+}
+}
+
+  
+
+
+
+.cards-vd{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.card {
+  position: relative;
+  margin: 0 2rem;
+  padding: 30px 60px;
+  width: 350px;
+  aspect-ratio: 08/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+
+
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.btn {
+outline: 0;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: rgb(255, 0, 0);
+min-width: 150px;
+border: 0;
+border-radius: 4px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+box-sizing: border-box;
+padding: 16px 20px;
+color: #fff;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+overflow: hidden;
+cursor: pointer;
+}
+
+.btn:hover {
+
+opacity: .95;
+}
+
+.btn .animation {
+border-radius: 100%;
+animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+0% {
+  box-shadow: 0 0 0 0 rgba(221, 5, 5, 0.884), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+}
+
+100% {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+}
+}
+
+
+
+
+
+.btn2 {
+outline: 0;
+display: inline-flex;
+align-items: center;
+justify-content: space-between;
+background: rgb(0, 4, 238);
+min-width: 200px;
+border: 0;
+border-radius: 4px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+box-sizing: border-box;
+padding: 16px 20px;
+color: #fff;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+overflow: hidden;
+cursor: pointer;
+}
+
+.btn2:hover {
+opacity: .95;
+}
+
+.btn2 .animation2 {
+border-radius: 100%;
+animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+0% {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+}
+
+100% {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+}
+}
+
+
+
+
+
+
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  text-align: center;
+  align-items: center;
+  margin: 30px 0 40px;
+  font-size: 17px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.card__button {
+  padding: 15px;
+  border-radius: 8px;
+  background: #e00404b2;
+  border: none;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
+}
+
+
+.fremeworks{
+background: #131313;
+}
+
+
+
+/* From Uiverse.io by mrtqzbek11 */ 
+.button2{
+width: 165px;
+height: 62px;
+cursor: pointer;
+color: #fff;
+font-size: 17px;
+border-radius: 1rem;
+border: none;
+position: relative;
+background: #100720;
+transition: 0.1s;
+}
+
+.button2::after {
+content: '';
+width: 100%;
+height: 100%;
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+filter: blur(15px);
+z-index: -1;
+position: absolute;
+left: 0;
+top: 0;
+}
+
+.button2:active {
+transform: scale(0.9) rotate(3deg);
+background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+transition: 0.5s;
+}
+
+
+
+
+.card3 {
+background-color: #1f1e27;
+border: 3px solid #cbe6ff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 26px;
+font-weight: 700;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+padding: 30px 20px;
+color: #cbe6ff;
+border-radius: 45px;
+}
+
+
+.fre-card{
+display: flex;
+
+  gap: 13rem;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.App-logo {
+pointer-events: none;
+margin-top: -10px;
+}
+
+.App-button {
+padding: 10px 20px;
+background-color: transparent;
+color: #cbe6ff;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+font-size: 15px;
+border: 3px solid #cbe6ff;
+border-radius: 5em;
+margin-top: 20px;
+transition: 0.2s;
+cursor: pointer;
+}
+
+.App-button:hover {
+color: #1e2127;
+background-color: #cbe6ff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.card3:hover .App-logo {
+  -webkit-animation: wobble-hor-bottom 0.9s ease-in both;
+  animation: wobble-hor-bottom 0.9s ease-in both;
+}
+}
+
+
+/**
+* ----------------------------------------
+* animation wobble-hor-bottom
+* ----------------------------------------
+*/
+@-webkit-keyframes wobble-hor-bottom {
+0%,
+100% {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+15% {
+  -webkit-transform: translateX(-30px) rotate(-6deg);
+  transform: translateX(-30px) rotate(-6deg);
+}
+30% {
+  -webkit-transform: translateX(15px) rotate(6deg);
+  transform: translateX(15px) rotate(6deg);
+}
+45% {
+  -webkit-transform: translateX(-15px) rotate(-3.6deg);
+  transform: translateX(-15px) rotate(-3.6deg);
+}
+60% {
+  -webkit-transform: translateX(9px) rotate(2.4deg);
+  transform: translateX(9px) rotate(2.4deg);
+}
+75% {
+  -webkit-transform: translateX(-6px) rotate(-1.2deg);
+  transform: translateX(-6px) rotate(-1.2deg);
+}
+}
+@keyframes wobble-hor-bottom {
+0%,
+100% {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+15% {
+  -webkit-transform: translateX(-30px) rotate(-6deg);
+  transform: translateX(-30px) rotate(-6deg);
+}
+30% {
+  -webkit-transform: translateX(15px) rotate(6deg);
+  transform: translateX(15px) rotate(6deg);
+}
+45% {
+  -webkit-transform: translateX(-15px) rotate(-3.6deg);
+  transform: translateX(-15px) rotate(-3.6deg);
+}
+60% {
+  -webkit-transform: translateX(9px) rotate(2.4deg);
+  transform: translateX(9px) rotate(2.4deg);
+}
+75% {
+  -webkit-transform: translateX(-6px) rotate(-1.2deg);
+  transform: translateX(-6px) rotate(-1.2deg);
+}
+}
+
+
+
+
+
+/* From Uiverse.io by aadium */ 
+.card4 {
+background-color: #1e2127;
+border: 3px solid #61dafb;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 26px;
+font-weight: 700;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding: 30px 20px;
+color: #61dafb;
+border-radius: 45px;
+}
+
+.App-logo2 {
+pointer-events: none;
+margin-top: -10px
+}
+
+.App-button {
+padding: 10px 20px;
+background-color: transparent;
+color: #61dafb;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 15px;
+border: 3px solid #61dafb;
+border-radius: 5em;
+margin-top: 20px;
+transition: 0.2s;
+}
+
+.App-button:hover {
+color: #1e2127;
+background-color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.App-logo2 {
+  animation: App-logo-spin infinite 5s linear;
+}
+}
+
+@keyframes App-logo-spin {
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+
+.Home-co{
+
+
+background: url() no-repeat;
+
+
+
+}

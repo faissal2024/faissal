@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style css/style.css">
 </head>
 
 
@@ -15,7 +18,7 @@
         <div class="loader"></div>
         <div class="loader"></div>
         <div class="loader"></div>
-    </div>
+    </div>   
     
   </div>
 
@@ -37,6 +40,7 @@
     <nav class="navbar" id="navbar">
         <a href="index.html" id="active" class="active">Home</a>
         <br>
+        <a href="course.html" id="">test</a>
        
        
 
@@ -53,25 +57,57 @@
 
     <section class="contact" id="contact">
         <h2 id="Contact1" class="heading">Contact <span>me </span></h2>
-        <form action="">
+        <form 
+        
+        action="https://formspree.io/f/mrbbwkjd"
+        method="POST">
             <div class="input-group">
                 <div class="input-box">
                     
-                    
 
-                    <input type="text"  placeholder="Full Name" >
-                    <input type="email" placeholder="Email">
+                  
+
+                    <div class="input__container">
+                        <div class="shadow__input"></div>
+                        <button class="input__button__shadow">
+
+                            <i class="material-icons">person</i>
+                          
+                        </button>
+                        <input type="text" name="text" class="input__search" placeholder="Full Name">
+                      </div>
+
+                      <div class="input__container">
+                        <div class="shadow__input"></div>
+                        <button class="input__button__shadow">
+                            <i style="font-size:24px" class="fa">&#xf0e0;</i>
+                        </button>
+                        <input type="text" name="text" class="input__search" placeholder="Email">
+                      </div>
+
 
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone number">
-                    <input type="text" placeholder="Subject">
+                    <div class="input__container">
+                        <div class="shadow__input"></div>
+                        <button class="input__button__shadow">
+                            <i class="material-icons">phone</i>
+                        </button>
+                        <input type="text" name="text" class="input__search" placeholder="Phone number">
+                      </div>
+                      <div class="input__container">
+                        <div class="shadow__input"></div>
+                        <button class="input__button__shadow">
+                            <i class="material-icons">subject</i>
+                        </button>
+                        <input type="text" name="text" class="input__search" placeholder="Subject">
+                      </div>
                 </div>
             </div>
 
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message">
             </textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
