@@ -263,7 +263,7 @@ section {
 
 
 .Home {
-  background-color: #fff;
+  height: 100vw;
   height: 100vh;
   display: flex;
   text-align: center;
