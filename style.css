@@ -18,7 +18,7 @@
 
 
 html {
-  font-size: 60%;
+  
   overflow-x: hidden;
  
 }
@@ -271,19 +271,18 @@ section {
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  gap: 15rem;
+  
+  
+  background-size: cover;
 
 }
 
 
 .home-div{
-  background-size: cover;
+
 overflow:  hidden;
+background-size: cover;
 }
-
-
-
 #background-vd{
   justify-content: center;
   align-items: center;
