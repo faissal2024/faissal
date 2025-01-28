@@ -277,6 +277,13 @@ section {
 }
 
 
+.home-div{
+  background-size: cover;
+overflow:  hidden;
+}
+
+
+
 #background-vd{
   justify-content: center;
   align-items: center;
