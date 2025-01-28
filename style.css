@@ -263,6 +263,9 @@ section {
 
 
 .Home {
+  background: url('https://www.desktophut.com/files/460TiRvT0TP43pa_Minimal%20Galaxy_2_prob4.mp4') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   text-align: center;
   align-items: center;
