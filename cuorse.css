@@ -1,0 +1,506 @@
+
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+  }
+  .ltr {
+    direction: ltr;
+    text-align: left;
+  }
+
+
+
+
+
+
+.skills{
+  height: 20vh;
+  width: 100%;
+  padding: 5px;
+  min-width: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+
+
+.card2 {
+
+font-size: 85px;
+background: rgba(41, 41, 41, 0);
+white-space: nowrap;
+overflow: hidden;
+border-radius: 50px;
+
+}
+
+button {
+font-size: 20px;
+margin: 0 70px;
+border: none;
+background-color: transparent;
+cursor: grab;
+}
+
+.longs {
+font-size: 5px;
+display: inline-block;
+animation: 30s sliding infinite linear;
+}
+
+/* to pause on hover  */
+/* .card:hover .longs{
+animation-play-state: paused;
+} */
+
+@keyframes sliding {
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-101%);
+}
+}
+
+  
+
+
+
+.cards-vd{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.card {
+  position: relative;
+  margin: 0 2rem;
+  padding: 30px 60px;
+  width: 350px;
+  aspect-ratio: 08/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+
+
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.btn {
+outline: 0;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: rgb(255, 0, 0);
+min-width: 150px;
+border: 0;
+border-radius: 4px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+box-sizing: border-box;
+padding: 16px 20px;
+color: #fff;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+overflow: hidden;
+cursor: pointer;
+}
+
+.btn:hover {
+
+opacity: .95;
+}
+
+.btn .animation {
+border-radius: 100%;
+animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+0% {
+  box-shadow: 0 0 0 0 rgba(221, 5, 5, 0.884), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+}
+
+100% {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+}
+}
+
+
+
+
+
+.btn2 {
+outline: 0;
+display: inline-flex;
+align-items: center;
+justify-content: space-between;
+background: rgb(0, 4, 238);
+min-width: 200px;
+border: 0;
+border-radius: 4px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+box-sizing: border-box;
+padding: 16px 20px;
+color: #fff;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+overflow: hidden;
+cursor: pointer;
+}
+
+.btn2:hover {
+opacity: .95;
+}
+
+.btn2 .animation2 {
+border-radius: 100%;
+animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+0% {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+}
+
+100% {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+}
+}
+
+
+
+
+
+
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  text-align: center;
+  align-items: center;
+  margin: 30px 0 40px;
+  font-size: 17px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+.card__button {
+  padding: 15px;
+  border-radius: 8px;
+  background: #e00404b2;
+  border: none;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
+}
+
+
+.fremeworks{
+background: #131313;
+}
+
+
+
+/* From Uiverse.io by mrtqzbek11 */ 
+.button2{
+width: 165px;
+height: 62px;
+cursor: pointer;
+color: #fff;
+font-size: 17px;
+border-radius: 1rem;
+border: none;
+position: relative;
+background: #100720;
+transition: 0.1s;
+}
+
+.button2::after {
+content: '';
+width: 100%;
+height: 100%;
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+filter: blur(15px);
+z-index: -1;
+position: absolute;
+left: 0;
+top: 0;
+}
+
+.button2:active {
+transform: scale(0.9) rotate(3deg);
+background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+transition: 0.5s;
+}
+
+
+
+
+.card3 {
+background-color: #1f1e27;
+border: 3px solid #cbe6ff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 26px;
+font-weight: 700;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+padding: 30px 20px;
+color: #cbe6ff;
+border-radius: 45px;
+}
+
+
+.fre-card{
+display: flex;
+
+  gap: 13rem;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.App-logo {
+pointer-events: none;
+margin-top: -10px;
+}
+
+.App-button {
+padding: 10px 20px;
+background-color: transparent;
+color: #cbe6ff;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+font-size: 15px;
+border: 3px solid #cbe6ff;
+border-radius: 5em;
+margin-top: 20px;
+transition: 0.2s;
+cursor: pointer;
+}
+
+.App-button:hover {
+color: #1e2127;
+background-color: #cbe6ff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.card3:hover .App-logo {
+  -webkit-animation: wobble-hor-bottom 0.9s ease-in both;
+  animation: wobble-hor-bottom 0.9s ease-in both;
+}
+}
+
+
+/**
+* ----------------------------------------
+* animation wobble-hor-bottom
+* ----------------------------------------
+*/
+@-webkit-keyframes wobble-hor-bottom {
+0%,
+100% {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+15% {
+  -webkit-transform: translateX(-30px) rotate(-6deg);
+  transform: translateX(-30px) rotate(-6deg);
+}
+30% {
+  -webkit-transform: translateX(15px) rotate(6deg);
+  transform: translateX(15px) rotate(6deg);
+}
+45% {
+  -webkit-transform: translateX(-15px) rotate(-3.6deg);
+  transform: translateX(-15px) rotate(-3.6deg);
+}
+60% {
+  -webkit-transform: translateX(9px) rotate(2.4deg);
+  transform: translateX(9px) rotate(2.4deg);
+}
+75% {
+  -webkit-transform: translateX(-6px) rotate(-1.2deg);
+  transform: translateX(-6px) rotate(-1.2deg);
+}
+}
+@keyframes wobble-hor-bottom {
+0%,
+100% {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+15% {
+  -webkit-transform: translateX(-30px) rotate(-6deg);
+  transform: translateX(-30px) rotate(-6deg);
+}
+30% {
+  -webkit-transform: translateX(15px) rotate(6deg);
+  transform: translateX(15px) rotate(6deg);
+}
+45% {
+  -webkit-transform: translateX(-15px) rotate(-3.6deg);
+  transform: translateX(-15px) rotate(-3.6deg);
+}
+60% {
+  -webkit-transform: translateX(9px) rotate(2.4deg);
+  transform: translateX(9px) rotate(2.4deg);
+}
+75% {
+  -webkit-transform: translateX(-6px) rotate(-1.2deg);
+  transform: translateX(-6px) rotate(-1.2deg);
+}
+}
+
+
+
+
+
+/* From Uiverse.io by aadium */ 
+.card4 {
+background-color: #1e2127;
+border: 3px solid #61dafb;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 26px;
+font-weight: 700;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding: 30px 20px;
+color: #61dafb;
+border-radius: 45px;
+}
+
+.App-logo2 {
+pointer-events: none;
+margin-top: -10px
+}
+
+.App-button {
+padding: 10px 20px;
+background-color: transparent;
+color: #61dafb;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 15px;
+border: 3px solid #61dafb;
+border-radius: 5em;
+margin-top: 20px;
+transition: 0.2s;
+}
+
+.App-button:hover {
+color: #1e2127;
+background-color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.App-logo2 {
+  animation: App-logo-spin infinite 5s linear;
+}
+}
+
+@keyframes App-logo-spin {
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+
+.Home-co{
+
+
+background: url() no-repeat;
+
+
+
+}
