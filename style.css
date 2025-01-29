@@ -25,7 +25,10 @@ html {
 
 body {
   /* cursor: url("../Demon Slayer.jpg") , auto; */
-  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   background: var(--bg-color);
   color: var(--text-color);
 }
@@ -263,8 +266,8 @@ section {
 
 
 .Home {
-  height: 100vw;
-  height: 100vh;
+  height: 100%;
+  max-width: 100%;
   display: flex;
   text-align: center;
   align-items: center;
@@ -278,12 +281,9 @@ section {
 }
 
 
-.home-div{
-
-overflow:  hidden;
-background-size: cover;
-}
 #background-vd{
+  max-width: 100%;
+  overflow-x: hidden;
   justify-content: center;
   align-items: center;
   position: absolute;
