@@ -286,11 +286,11 @@ background-size: cover;
 #background-vd{
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   z-index: -10;
 }
