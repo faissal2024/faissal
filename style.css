@@ -774,6 +774,64 @@ span {
 
 
 
+.wave4 {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#0012b3,#0b0d97 60%,#00ddeb);
+}
+
+
+.wave4:nth-child(2),
+.wave4:nth-child(3) {
+  top: 210px;
+}
+
+
+
+
+.playing .wave4 {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave4 {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave4:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave4:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave4:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+
+
+@keyframes wave4 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 
 
 
@@ -1884,6 +1942,17 @@ span {
   margin-top: 2rem;
 
 }
+
+
+.div-cont{
+
+
+  background-color: #0c0c0c;
+  
+}
+
+
+
 
 .footer {
   position: relative;
